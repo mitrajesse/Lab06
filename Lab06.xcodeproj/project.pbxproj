@@ -16,6 +16,11 @@
 			path = Lab06;
 			sourceTree = "<group>";
 		};
+		1BEC24872CAF42C900BF8C81 /* Models */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +37,7 @@
 		1BEC246D2CAF429200BF8C81 = {
 			isa = PBXGroup;
 			children = (
+				1BEC24872CAF42C900BF8C81 /* Models */,
 				1BEC24782CAF429200BF8C81 /* Lab06 */,
 				1BEC24772CAF429200BF8C81 /* Products */,
 			);
@@ -62,6 +68,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				1BEC24782CAF429200BF8C81 /* Lab06 */,
+				1BEC24872CAF42C900BF8C81 /* Models */,
 			);
 			name = Lab06;
 			packageProductDependencies = (

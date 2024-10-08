@@ -11,7 +11,7 @@ enum QuestType {
     case explore(location: String)
     case treasure(size: Int)
     
-    var difficultyMultiplier: Double {
+    func difficultyMultiplier() -> Double {
         switch self {
         case .journey:
             return 1.0

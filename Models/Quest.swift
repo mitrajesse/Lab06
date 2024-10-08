@@ -15,12 +15,18 @@ struct Quest {
         self.description = description
         self.questType = questType
         self.stepsRemaining = questType.totalSteps
-        self.reward = questType.reward
+        self.reward = Int(Double(questType.reward) * questType.difficultyMultiplier())
     }
     
     mutating func completeStep() {
         if stepsRemaining > 0 {
             stepsRemaining -= 1
+            updateReward()
         }
+    }
+    
+    private mutating func updateReward() {
+        let percentComplete = Double(questType.totalSteps - stepsRemaining) / Double(questType.totalSteps)
+        reward = Int(Double(questType.reward) * questType.difficultyMultiplier() * percentComplete)
     }
 }
